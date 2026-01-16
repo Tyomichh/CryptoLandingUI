@@ -890,6 +890,16 @@ body.pricing .section_page_block {
     animation: animationes .6s ease-in;
 }
 
+.payment-ui_title {
+    color: #242424;
+    text-align: center;
+
+}
+
+.payment-ui_disclaimer {
+    color: #242424;
+}
+
 .checkout_method {
     max-width: 234px;
     display: grid;
@@ -933,7 +943,7 @@ body.pricing .section_page_block {
 
 .input_group input {
     display: flex;
-    max-width: 200px;
+    box-sizing: border-box;
     width: 100%;
     padding: 0 15px;
     border-radius: 30px;
@@ -941,11 +951,6 @@ body.pricing .section_page_block {
     background-color: #efefff;
     outline: none;
     line-height: 30px;
-}
-
-.input_group .dateInp {
-    max-width: 90px;
-    width: 100%;
 }
 
 .input_group input:focus {
@@ -956,14 +961,10 @@ body.pricing .section_page_block {
     max-width: 105px;
 }
 
-.CVV_group {
-    max-width: 60px;
-}
-
 .horizontal_grid {
     display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    gap: 15px;
+    grid-template-columns: 0.8fr 1.4fr;
+    gap: 14px;
 }
 
 .button--checkout {
@@ -1749,6 +1750,11 @@ body.pricing .section_page_block {
         margin: 200px auto;
     }
 
+    .payment_left_decoration,
+    .payment_right_decoration {
+        display: none;
+    }
+
     /* SignUp Page */
     .reg_form {
         max-width: 280px;
@@ -1787,11 +1793,6 @@ body.pricing .section_page_block {
         gap: 5px;
         padding: 15px;
         margin: 180px auto;
-    }
-
-    .payment_left_decoration,
-    .payment_right_decoration {
-        display: none;
     }
 
     /* SignUp Page */

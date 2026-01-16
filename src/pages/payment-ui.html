@@ -44,59 +44,68 @@
       </header>
 
       <form class="payment_form" action="" autocomplete="off">
+        <h2 class="payment-ui_title">
+          Payment Preview <br />
+          (UI Demo)
+        </h2>
+        <p class="payment-ui_disclaimer">
+          This form is a visual representation only. No real payments are
+          processed.
+        </p>
+
         <div class="payment_left_decoration"></div>
 
         <div class="payment_right_decoration"></div>
 
         <div class="checkout_information">
           <div class="input_group">
-            <label for="name">Name on card</label>
+            <label for="name">User Name</label>
             <input
               class="validInput"
               type="text"
               id="name"
-              placeholder="Enter name"
+              placeholder="User-001"
             />
           </div>
 
           <div class="input_group">
-            <label for="number">Card number</label>
+            <label for="number">Payment Reference</label>
             <input
               class="validInput"
               id="card-number"
               type="text"
               maxlength="19"
-              placeholder="..."
+              placeholder="XXXX-XXXX"
             />
           </div>
 
           <div class="horizontal_grid">
-            <div class="input_group date_group">
-              <label for="date">Expiration date</label>
+            <div class="input_group">
+              <label for="date">Date</label>
               <input
                 class="validInput dateInp"
                 id="expiry-date"
                 maxlength="5"
                 type="text"
-                placeholder="12/27"
+                placeholder="MM/YY"
               />
             </div>
 
-            <div class="input_group CVV_group">
-              <label for="cvv">CVV</label>
+            <div class="input_group">
+              <label for="cvv">Security Code (demo)</label>
               <input
                 class="validInput"
                 id="cvv"
-                maxlength="4"
+                maxlength="3"
                 type="text"
-                placeholder="CVV"
+                placeholder="***"
               />
             </div>
           </div>
         </div>
 
         <button class="payment_button button--checkout" type="submit">
-          Send
+          Preview
         </button>
       </form>
     </div>

@@ -10,7 +10,7 @@ payform.addEventListener('submit', function (event) {
 
     event.preventDefault();
 
-    if (cardNumberInput.value.length >= 19 && expiryDateInput.value.length >= 5 && cvvInput.value.length >= 4) {
+    if (cardNumberInput.value.length >= 19 && expiryDateInput.value.length >= 5 && cvvInput.value.length >= 3) {
         payButton.style.opacity = '0';
         payButton.style.pointerEvents = 'none';
         payButton.parentNode.insertBefore(spinnerLoader, payButton.nextSibling);
