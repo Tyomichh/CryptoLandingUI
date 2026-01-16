@@ -19,7 +19,6 @@ for learning and practice purposes.
 - Pricing section with subscription plans (UI only)
 - Sign up form (no data submission)
 - Payment preview form with demo fields
-- Icons integration (IcoMoon)
 
 ## Payment preview notice
 
