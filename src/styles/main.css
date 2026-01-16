@@ -9,6 +9,16 @@ body {
     background-color: #010922;
 }
 
+body.signup {
+    height: 100%;
+    overflow: hidden;
+}
+
+body.payment-ui {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
 
 h1,
 h2,
@@ -24,6 +34,11 @@ p {
 }
 
 /* Circles */
+body.home .purple_circle {
+    left: 9%;
+    top: -8%;
+}
+
 .purple_circle {
     position: absolute;
     max-width: 677px;
@@ -35,6 +50,14 @@ p {
     border-radius: 50%;
     background: rgba(128, 128, 215, 0.7);
     filter: blur(127px);
+}
+
+body.home .green_circle {
+    top: 7%;
+}
+
+body.pricing .green_circle {
+    top: 38%;
 }
 
 .green_circle {
@@ -106,11 +129,24 @@ p {
 }
 
 /* Page_block */
+body.home .page {
+    height: auto;
+    overflow: hidden;
+}
+
+body.pricing .page {
+    height: auto;
+}
+
 .page {
     width: 100%;
     height: 1400px;
     position: relative;
     overflow: hidden;
+}
+
+.page_block {
+    margin-top: 160px;
 }
 
 .page_block_organizer {
@@ -120,6 +156,11 @@ p {
 }
 
 /* Section */
+
+body.pricing .section_page_block {
+    margin-top: 0;
+}
+
 .section_page_block {
     margin-top: 160px;
     margin-bottom: 260px;
@@ -127,7 +168,7 @@ p {
 
 
 
-/*              Fist section                   */
+/*              Header                */
 
 
 
@@ -160,7 +201,7 @@ p {
     align-items: center;
 }
 
-.syteLogo_title {
+.siteLogo_title {
     margin-left: 28px;
     display: inline;
     font-size: 24px;
@@ -168,14 +209,14 @@ p {
     font-family: 'Outfit', sans-serif;
     color: #ffffff;
     text-transform: uppercase;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .header_nav {
     display: inherit;
     font-size: 16px;
     font-weight: 400;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
     text-align: left;
 }
 
@@ -284,6 +325,12 @@ p {
     transform: rotate(-45deg) translate(-5px);
 }
 
+
+
+/*              Home Page Fist section                   */
+
+
+
 /* discover_nfts block */
 .discover_nfts_item_text {
     display: flex;
@@ -321,7 +368,7 @@ p {
 
 
 
-/*              Second section                   */
+/*              Home Page Second section                   */
 
 
 
@@ -361,7 +408,7 @@ p {
 
 
 
-/*              Third section                   */
+/*              Home Page Third section                   */
 
 
 
@@ -396,7 +443,7 @@ p {
 }
 
 
-/*              Fourght section                   */
+/*             Home Page Fourght section                   */
 
 
 
@@ -468,7 +515,7 @@ p {
 
 
 
-/*              Fifth section                   */
+/*             Home Page Fifth section                   */
 
 
 
@@ -540,7 +587,7 @@ p {
     margin-top: 290px;
 }
 
-.footer_syteLogo {
+.footer_siteLogo {
     float: left;
     padding-right: 90px;
     margin: 0;
@@ -681,21 +728,7 @@ p {
 
 
 
-
-
-
-
-
-
-
-/*              Second page               */
-
-
-
-
-
-
-
+/*              Pricing page               */
 
 
 
@@ -791,7 +824,7 @@ p {
 
 .list_style {
     margin: 15px 0 0;
-    list-style-image: url(../image/VectorQ.svg);
+    list-style-image: url(../../public/assets/image/VectorQ.svg);
 }
 
 .list_style li {
@@ -823,7 +856,8 @@ p {
 
 
 
-/*                  Payment_form                    */
+/*                  Payment-UI Page                    */
+
 
 
 
@@ -832,7 +866,7 @@ p {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../image/Screenshot_2.jpg) no-repeat;
+    background: url(../../public/assets/image/Screenshot_2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(85px);
@@ -1012,19 +1046,7 @@ p {
 
 
 
-
-
-
-
-
-/*              RegForm page               */
-
-
-
-
-
-
-
+/*              SignUp Page               */
 
 
 
@@ -1222,13 +1244,28 @@ p {
     }
 
     /* Container */
+    body.home .container {
+        width: 94%;
+    }
+
+    /*Section*/
+    body.home .section_page_block {
+        margin-bottom: 360px;
+    }
+
     .container {
         width: 97%;
     }
 
-    /* RegForm page */
+    /* SignUp Page */
     .header {
         width: 100%;
+    }
+
+    /* images */
+    .first_section_image {
+        width: 470px;
+        height: 470px;
     }
 
 }
@@ -1259,10 +1296,72 @@ p {
         margin-bottom: 200px;
     }
 
+    /* First section */
+    .discover_nfts_item_text {
+        width: 100%;
+    }
+
+    .discover_nfts_item_photo {
+        width: 0;
+    }
+
+    .discover_nfts_item_text {
+        align-items: center;
+    }
+
+    .discover_nfts_title {
+        width: 80%;
+    }
+
+    .discover_nfts_text {
+        width: 80%;
+    }
+
+    /* Second section */
+    .analytics_photo_item {
+        width: 45%;
+    }
+
+    .analytics_text_item {
+        width: 55%;
+    }
+
+    /* Third section */
+    .get_our_up_text_item {
+        width: 55%;
+    }
+
+    .get_our_up_photo_item {
+        width: 45%;
+    }
+
+    .Access_photo_item {
+        width: 42%;
+    }
+
+    .Access_text_item {
+        width: 58%;
+    }
+
+    /* Fifth section */
+    .big_thing_section {
+        margin-top: 400px;
+    }
+
     /* Font-styles */
     .pricing_title {
         font-size: 40px;
         text-align: center;
+    }
+
+    /* images */
+    .section_image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .first_section_image {
+        display: none;
     }
 
     /* Footer */
@@ -1270,7 +1369,7 @@ p {
         margin-top: 200px;
     }
 
-    .footer_syteLogo {
+    .footer_siteLogo {
         float: none;
         padding-right: 0;
         margin-bottom: 20px;
@@ -1313,7 +1412,7 @@ p {
     }
 
     /* Font-styles */
-    .syteLogo_title {
+    .siteLogo_title {
         font-size: 20px;
         /* cursor: pointer; */
     }
@@ -1323,12 +1422,98 @@ p {
         font-size: 12px;
     }
 
+    /* images */
+    .section_image {
+        width: 0;
+        height: 0;
+    }
+
+    .logos_image {
+        width: 130px;
+    }
+
+    .logos_image_mit {
+        width: 50px;
+    }
+
+    .logos_image_forbes {
+        width: 90px;
+    }
+
+    /*First section*/
+    .discover_nfts_title {
+        width: 100%;
+    }
+
+    .discover_nfts_text {
+        width: 100%;
+    }
+
+    /* Second section */
+    .analytics_photo_item {
+        width: 0;
+    }
+
+    .analytics_text_item {
+        width: 100%;
+    }
+
+    /* Third section */
+    .get_our_up_text_item {
+        width: 100%;
+    }
+
+    .get_our_up_photo_item {
+        width: 0%;
+    }
+
+    .Access_photo_item {
+        width: 0%;
+    }
+
+    .Access_text_item {
+        width: 100%;
+    }
+
+    /* Fourght section */
+    .testemonials_block {
+        gap: 20px;
+    }
+
+    .test_section {
+        height: 1033px;
+    }
+
+    /* Fifth section */
+    .big_thing_section {
+        margin-top: 0;
+    }
+
     /* Footer */
     .footer_column {
         padding-bottom: 10px;
         padding-right: 15px;
     }
 
+}
+
+@media (max-height: 600px) {
+
+    /* header */
+    .header {
+        margin-bottom: 60px;
+    }
+
+    /* Payment-UI */
+    .payment_form {
+        margin: 130px auto;
+    }
+
+
+    /* SignUp Page */
+    .reg_form {
+        margin: 60px auto;
+    }
 }
 
 @media (max-width: 580px) {
@@ -1343,7 +1528,18 @@ p {
         left: 65%;
     }
 
+    /* Buttons */
+    .section_button {
+        width: 260px;
+        height: 62px;
+    }
+
     /* Section */
+    body.home .section_page_block {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+
     .section_page_block {
         margin-bottom: 126px;
     }
@@ -1362,13 +1558,102 @@ p {
     }
 
     /* Сontainer */
+    body.home .container {
+        width: 90%;
+    }
+
     .container {
         width: 92%;
     }
 
+    /* images */
+    .logos_image {
+        width: 110px;
+    }
+
+    .logos_image_mit {
+        width: 40px;
+    }
+
+    .logos_image_forbes {
+        width: 70px;
+    }
+
+    .logos {
+        height: 80px;
+    }
+
     /* header */
+    body.signup .header,
+    body.payment-ui .header,
+    body.pricing .header {
+        padding-top: 40px;
+        margin-bottom: 100px;
+    }
+
     .header {
         padding-top: 20px;
+    }
+
+    body.home .nav_link {
+        margin: 0 5px;
+    }
+
+    body.home .header_nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        background-color: #010922;
+        border-radius: 15px;
+        top: 190%;
+        right: 0;
+    }
+
+    body.home .header_nav.active {
+        display: block;
+    }
+
+    body.home .nav_link {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+    }
+
+    body.home .nav_link:after {
+        top: 90%;
+        width: 50px;
+        left: 4%;
+    }
+
+    /* NAV TOGGLE */
+    body.home .nav-toggle {
+        display: block;
+    }
+
+    /* First section */
+    .discover_nfts_button {
+        width: 210px;
+        height: 60px;
+    }
+
+    .discover_button_div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    /* Fourth section */
+    .testimonials_title {
+        height: 20px;
+    }
+
+    /* Fifth section */
+    .big_thing_square_title {
+        width: 320px;
+    }
+
+    .big_square_block {
+        height: 300px;
     }
 
     /* Second page */
@@ -1413,14 +1698,14 @@ p {
         height: 50px;
     }
 
-    /* Payment_form */
+    /* Payment-UI */
     .payment_form {
         gap: 35px;
         padding: 40px;
         margin: 250px auto;
     }
 
-    /* RegForm page */
+    /* SignUp Page */
     .reg_form {
         max-width: 315px;
         margin: 130px auto;
@@ -1440,14 +1725,31 @@ p {
         margin-bottom: 80px;
     }
 
-    /* Payment_form */
+    /* images */
+    .logos_image {
+        width: 90px;
+    }
+
+    .logos_image_mit {
+        width: 20px;
+    }
+
+    .logos_image_forbes {
+        width: 50px;
+    }
+
+    .logos {
+        height: 60px;
+    }
+
+    /* Payment-UI */
     .payment_form {
         gap: 30px;
         padding: 30px;
         margin: 200px auto;
     }
 
-    /* RegForm page */
+    /* SignUp Page */
     .reg_form {
         max-width: 280px;
         margin: 100px auto;
@@ -1480,7 +1782,7 @@ p {
         display: none;
     }
 
-    /* Payment_form */
+    /* Payment-UI */
     .payment_form {
         gap: 5px;
         padding: 15px;
@@ -1492,7 +1794,7 @@ p {
         display: none;
     }
 
-    /* RegForm page */
+    /* SignUp Page */
     .reg_form {
         max-width: 230px;
         margin: 75px auto;
@@ -1523,23 +1825,4 @@ p {
         padding: 14px 8px;
     }
 
-}
-
-@media (max-height: 600px) {
-
-    /* header */
-    .header {
-        margin-bottom: 60px;
-    }
-
-    /* Payment_form */
-    .payment_form {
-        margin: 130px auto;
-    }
-
-
-    /* RegForm page */
-    .reg_form {
-        margin: 60px auto;
-    }
 }
